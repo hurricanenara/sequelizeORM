@@ -1,0 +1,35 @@
+GET http://localhost:3000/helloWorld
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "banana",
+    "password": "password123"
+}
+
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "title": "this is great",
+    "content": "wow",
+    "userId": 1
+}
+
+###
+
+GET http://localhost:3000/posts
+
+###
+
+GET http://localhost:3000/users/2/posts
+
+###
+
+DELETE http://localhost:3000/users/1
+
